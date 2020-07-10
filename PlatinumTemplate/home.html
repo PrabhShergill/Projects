@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	 <title>Platinum Template</title>
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet" />
+	<link href="https://ultimatefranchise.blob.core.windows.net/cssfiles/CSS/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/js/jquery-3.1.1.min.js"></script>
+	<script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet" />
+	<link href=" https://ultimatefranchise.blob.core.windows.net/cssfiles/CSS/bootstrap.css" rel="stylesheet" />
+	<link href="../Content/font-awesome.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+	<script src="https://ultimatefranchise.blob.core.windows.net/jsfiles/js/bootstrap-tour.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#testimonial-slider").owlCarousel({
+				items:1,
+				itemsDesktop:[1000,2],
+				itemsDesktopSmall:[979,1],
+				itemsTablet:[768,1],
+				pagination:false,
+				navigation:true,
+				slideSpeed:1000,
+				singleItem:true,
+				transitionStyle:"goDown",
+				navigationText:["",""],
+				autoPlay:false
+			});
+		});
+	</script>
+  
+	<script type="text/javascript">
+	   
+		var isSubmitteddown = false;
+		
+		function ValidateBottom() {
+			var txtbottom1 = document.getElementById('fullnamedown');
+			var txtbottom2 = document.getElementById('emaildown');
+			var txtbottom3 = document.getElementById('phonedown');
+			var Radio1 = document.getElementsByName('RadioButtonList1');
+			var RadioValue1 = false;
+
+			for (var i = 0; i < Radio1.length; i++){
+				if (Radio1[i].checked == true) {
+				RadioValue1 = true;    
+				}
+			}
+
+			var Radio2 = document.getElementsByName('RadioButtonList2');
+			var RadioValue2 = false;
+
+			for (var i = 0; i < Radio2.length; i++){
+				if (Radio2[i].checked == true) {
+				RadioValue2 = true;    
+				}
+			}
+
+			var Radio3 = document.getElementsByName('RadioButtonList3');
+			var RadioValue3 = false;
+
+			for (var i = 0; i < Radio3.length; i++){
+				if (Radio3[i].checked == true) {
+				RadioValue3 = true;    
+				}
+			}
+
+			var e = document.getElementById("DropDownList1");
+			var strUser = e.options[e.selectedIndex].value;
+
+			if (txtbottom1.value == '' || txtbottom2.value == '' || txtbottom3.value == '' || !RadioValue1 || !RadioValue2 || !RadioValue3 || strUser == '') {
+				alert('Please fill in all fields.');
+				return false;
+			}
+			else {
+				if (!isSubmitteddown) {
+
+					btn.value = "Submitting....";
+
+					isSubmitteddown = true;
+					return true;
+				}
+				else {
+					return false;
+				}
+
+			}
+		}
+	   
+	</script>
+   <script>
+  $(function () {
+	var element = $("#element1");
+	$(window).scroll(function () {
+	if($(window).scrollTop() + $(window).height()  >= $("#element1").offset().top){ 
+		element.addClass("animation1");
+	  }
+	  else {
+		element.removeClass("animation1");
+	  }
+	  });
+	  
+  });
+</script>
+	<script>
+  $(function () {
+	var element = $("#element2");
+	$(window).scroll(function () {
+	  if($(window).scrollTop() + $(window).height() >= $("#element2").offset().top){
+		element.addClass("animation2");
+	  }
+	  else {
+		element.removeClass("animation2");
+	  }
+	});
+  });
+</script>
+	<script>
+  $(function () {
+	var element = $("#element3");
+	$(window).scroll(function () {
+	  if($(window).scrollTop() + $(window).height() >= $("#element3").offset().top){
+		element.addClass("animation3");
+	  }
+	  else {
+		element.removeClass("animation3");
+	  }
+	});
+  });
+</script>
+	<script>
+  $(function () {
+	var element = $("#element4");
+	$(window).scroll(function () {
+	  if($(window).scrollTop() + $(window).height() >= $("#element4").offset().top){
+		element.addClass("animation4");
+	  }
+	  else {
+		element.removeClass("animation4");
+	  }
+	});
+  });
+</script>
+	<script>
+  $(function () {
+	var element = $("#element5");
+	$(window).scroll(function () {
+	  if($(window).scrollTop() + $(window).height() >= $("#element5").offset().top){
+		element.addClass("animation5");
+	  }
+	  else {
+		element.removeClass("animation5");
+		}
+	   
+	  });
+	  
+  });
+</script>
+	<script>
+  $(function () {
+	var element = $("#element6");
+	$(window).scroll(function () {
+	  if($(window).scrollTop() + $(window).height() >= $("#element6").offset().top){
+		element.addClass("animation6");
+	  }
+	  else {
+		element.removeClass("animation6");
+	  }
+	});
+  });
+</script>
+	<script>
+			window.onload = function () {
+				lax.setup() // init
+
+				const updateLax = () => {
+					lax.update(window.scrollY)
+					window.requestAnimationFrame(updateLax)
+				}
+
+				window.requestAnimationFrame(updateLax)
+			}
+	</script>
+
+
+	<style>
+	  html,
+		body {
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px; 
+		
+		font-family: 'Nunito', sans-serif;
+
+		}
+	  body{
+		  overflow-x:hidden;
+	  }
+		a {
+			color: black;
+			-webkit-transition: all .35s;
+			-moz-transition: all .35s;
+			transition: all .35s;
+		}
+
+			a:hover,
+			a:focus {
+				color: forestgreen;
+			}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		.btn-nav{
+			margin-top:20px;
+			margin-left:65px;
+			background-color:#da3832;
+			font-weight:bold;
+			width:200px;
+			color:white;
+		}
+		header #bg {
+			position: relative;
+			width: 100%;
+			height:600px;
+			text-align: center;
+			color: #fff;
+			background-image: url('https://ultimatefranchise.blob.core.windows.net/images/Images/PlatinumTemplate/vinicius-amano-i_pYirBWBBE-unsplash-new-min.jpg');
+			background-position: center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-o-background-size: cover;
+		   
+		}
+		 .dark-background{
+			height: 600px;
+			width: 100%;          
+			background-color:rgba(0,0,0,0.7);
+			z-index:5;
+		}
+		.header-text{
+			margin-top:14%;
+			text-align:left;            
+		}
+		.header-text h1{
+			font-size:3em; 
+			font-weight:bold; 
+			text-transform: uppercase;
+		}
+		.header-circle{
+			position:absolute;
+			margin-top:2.55%;
+			margin-left:45%;
+			height:625px;
+			z-index:10;            
+		}
+		.header-circle img{
+			width:100%;
+			margin-top:45px;
+		}
+		.img-body-1{
+			width:100%;
+			height:425px;
+			margin-top:25px;
+			box-shadow:6px 6px 5px rgba(0,0,0,0.3);
+		}
+		.img-body-2{
+			width:100%;
+			height:425px;
+			margin-top:40px;
+			box-shadow:6px 6px 5px rgba(0,0,0,0.3);
+		}
+		.container .box{
+			position:relative;
+			width: 275px;
+			height:275px;
+			overflow:hidden;
+			transition: 0.4s;
+			margin:5px;
+		}
+		.container:hover .box{
+			
+			transform: scale(.95);
+		}
+		.container .box:hover{
+			z-index:1;            
+			transform: scale(1.15);
+			box-shadow: 0 25px 40px rgba(0,0,0,.5);
+		}
+		.container .box .imgBx{
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height: 100%;
+		}
+		.container .box .imgBx::before{
+			content:'';
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height: 100%;
+			z-index:1;
+			background:linear-gradient(180deg,#f00,#000);
+			mix-blend-mode:multiply;
+			opacity:0;
+			transition:0.4s;
+		}
+		.container .box:hover .imgBx::before{
+			opacity:1;
+		}
+		.container .box .imgBx img{
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height: 100%;
+			object-fit:cover;
+		}
+		.container .box .content{
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height: 100%;
+			z-index:1;       
+			padding:20px;
+		}
+		.container .box .content h2{
+			color: #fff;
+			transition: 0.5s;
+			text-transform: uppercase;
+			margin-top: 25px;
+			margin-bottom: 10px;
+			font-size: 20px;
+			transform: translateY(200px);
+		}
+		.container .box.hover .content h2{
+			transform: translateY(0);
+			transition-delay: 0.4s;
+		}
+		.container .box .content p{
+			color:#fff;
+			transform: translateY(200px);
+			transition: 0.4s;
+			font-size: 14px;
+		}
+		.container .box:hover .content p{
+			transform: translateY(0);
+			transition-delay: 0s;
+		}
+		.logo {
+			background: url(https://ultimatefranchise.blob.core.windows.net/images/Images/BarrhavenMartialArts/logo-black.png) no-repeat center 1%;
+			background-color: none;
+			background-size: contain;
+			width: 300px;
+			height: 80px;
+			z-index: 1;
+			position: absolute;
+			margin-top:-15px;
+			margin-left:-15px;
+		}
+
+		#element1.animation1 {
+			animation: yourAnimation1 0.7s forwards 0s ease-in-out;
+		}
+		#element2.animation2 {
+			animation: yourAnimation1 0.7s forwards 0s ease-in-out;
+		}
+		#element3.animation3 {
+			animation: yourAnimation2 0.7s forwards 0s ease-in-out;
+		}   
+		#element4.animation4 {
+			animation: yourAnimation3 0.7s forwards 0s ease-in-out;
+		}
+		#element5.animation5 {
+			animation: yourAnimation1 0.7s forwards 0s ease-in-out;
+		}
+		#element6.animation6 {
+			animation: yourAnimation1 0.7s forwards 0s ease-in-out;
+		}
+		
+		@keyframes yourAnimation1{
+			0%{
+				transform: rotate(0) translateY(15%);
+				opacity: 0;
+			}
+			100%{
+				transform: rotate(0) translateY(0%);
+				opacity: 1;
+			}
+		}
+		@keyframes yourAnimation2{
+			0%{
+				transform: rotate(0);
+				opacity: 0;
+				}
+			100%{
+				transform: rotate(0);
+				opacity: 1;
+				}
+		}
+		@keyframes yourAnimation3{
+			0%{
+				transform: scale(1.1);
+				opacity:0;
+				}
+			100%{
+				transform: scale(1);
+				opacity:1;
+				}
+		}
+		.intro {
+			color: #687578;
+			background-color: #f3f3f3;
+			padding: 20px 0;
+			text-align: center;
+			z-index:20;
+		}
+
+
+		.page-footer {
+			text-align: center;
+		}
+
+			.page-footer .contact {
+				padding: 50px 0;
+				background-color: #CD302D;
+				color: #fff;
+				position:relative;
+			}
+
+				.page-footer .contact p {
+					font-size: 28px;
+					font-weight: 300;
+				}
+
+				.content-3 .glyphicon,
+				.page-footer .contact .glyphicon {
+					font-size: 32px;
+					font-weight: 700;
+				}
+
+			.page-footer .small-print {
+				padding: 50px 0 40px;
+				font-weight: 300;
+			}
+
+		.navbar-default {
+			border-color: rgba(34,34,34,.05);
+			background-color: #fff;
+			-webkit-transition: all .35s;
+			-moz-transition: all .35s;
+			transition: all .35s;
+		}
+
+			.navbar-default .navbar-header .navbar-brand {
+				color: black;
+			}
+
+				.navbar-default .navbar-header .navbar-brand:hover,
+				.navbar-default .navbar-header .navbar-brand:focus {
+					color: #eb3812;
+				}
+
+			.navbar-default .nav > li > a,
+			.navbar-default .nav > li > a:focus {
+				color: #222;
+			}
+
+				.navbar-default .nav > li > a:hover,
+				.navbar-default .nav > li > a:focus:hover {
+					color: black;
+				}
+
+			.navbar-default .nav > li.active > a, .navbar-default .nav > li.active > a:focus {
+				color: #cd323f !important;
+				background-color: transparent;
+			}
+
+				.navbar-default .nav > li > a:hover,
+				.navbar-default .nav > li > a:focus:hover {
+					background-color: transparent !important;
+					color: #CD3235 !important;
+				}
+		 .navbar-default {
+				border-color: rgba(255,255,255,.3);
+				background-color: black;
+			}
+
+				.navbar-default .navbar-header .navbar-brand {
+					color: rgba(255,255,255,1);
+					letter-spacing: 0.5em;
+				}
+
+					.navbar-default .navbar-header .navbar-brand:hover,
+					.navbar-default .navbar-header .navbar-brand:focus {
+						color: #fff;
+					}
+
+				.navbar-default .nav > li > a,
+				.navbar-default .nav > li > a:focus {
+					color: rgba(255,255,255,1);
+					font-weight:bold;
+					font-size:20px;
+				}
+				
+					.navbar-default .nav > li > a:hover,
+					.navbar-default .nav > li > a:focus:hover {
+						color: #fff;
+					}
+				   
+
+				.navbar-default.affix {
+					border-color: black;
+					background-color: black !important;
+					box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+				}
+
+					.navbar-default.affix .navbar-header .navbar-brand {
+						letter-spacing: 0;
+						color: black;
+					}
+
+						.navbar-default.affix .navbar-header .navbar-brand:hover,
+						.navbar-default.affix .navbar-header .navbar-brand:focus {
+							color: #eb3812;
+						}
+
+					.navbar-default.affix .nav > li > a,
+					.navbar-default.affix .nav > li > a:focus {
+						color: rgba(255,255,255,1);
+					}
+
+						.navbar-default.affix .nav > li > a:hover,
+						.navbar-default.affix .nav > li > a:focus:hover {
+							color: rgba(255,255,255,1);
+						}
+		@media(max-width:768px) {
+			.navbar-default {
+				border-color: rgba(255,255,255,.3);
+				background-color: black;
+			}
+
+				.navbar-default .navbar-header .navbar-brand {
+					color: rgba(255,255,255,1);
+					letter-spacing: 0.5em;
+				}
+
+					.navbar-default .navbar-header .navbar-brand:hover,
+					.navbar-default .navbar-header .navbar-brand:focus {
+						color: #fff;
+					}
+
+				.navbar-default .nav > li > a,
+				.navbar-default .nav > li > a:focus {
+					color: rgba(255,255,255,1);
+					font-weight:bold;
+					font-size: 20px;
+				}
+				
+					.navbar-default .nav > li > a:hover,
+					.navbar-default .nav > li > a:focus:hover {
+						color: #fff;
+					}
+				   
+
+				.navbar-default.affix {
+					border-color: black;
+					background-color: black !important;
+					box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+				}
+
+					.navbar-default.affix .navbar-header .navbar-brand {
+						letter-spacing: 0;
+						color: black;
+					}
+
+						.navbar-default.affix .navbar-header .navbar-brand:hover,
+						.navbar-default.affix .navbar-header .navbar-brand:focus {
+							color: #eb3812;
+						}
+
+					.navbar-default.affix .nav > li > a,
+					.navbar-default.affix .nav > li > a:focus {
+						color: rgba(255,255,255,1);
+					}
+
+						.navbar-default.affix .nav > li > a:hover,
+						.navbar-default.affix .nav > li > a:focus:hover {
+							color: rgba(255,255,255,1);
+						}
+		}
+
+		.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+			border-color: #e7e7e7;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		.btn-default {
+			border-width:2px;
+			border-color: #fff;
+			-webkit-transition: all .35s;
+			-moz-transition: all .35s;
+			transition: all .35s;
+		}
+
+			.btn-default:hover,
+			.btn-default:focus,
+			.btn-default.focus,
+			.btn-default:active,
+			.btn-default.active,
+			.open > .dropdown-toggle.btn-default {
+				border-color: #eee;
+				color: #222;
+				background-color: #eee;
+			}
+
+			.btn-default:active,
+			.btn-default.active,
+			.open > .dropdown-toggle.btn-default {
+				background-image: none;
+			}
+
+			.btn-default.disabled,
+			.btn-default[disabled],
+			fieldset[disabled] .btn-default,
+			.btn-default.disabled:hover,
+			.btn-default[disabled]:hover,
+			fieldset[disabled] .btn-default:hover,
+			.btn-default.disabled:focus,
+			.btn-default[disabled]:focus,
+			fieldset[disabled] .btn-default:focus,
+			.btn-default.disabled.focus,
+			.btn-default[disabled].focus,
+			fieldset[disabled] .btn-default.focus,
+			.btn-default.disabled:active,
+			.btn-default[disabled]:active,
+			fieldset[disabled] .btn-default:active,
+			.btn-default.disabled.active,
+			.btn-default[disabled].active,
+			fieldset[disabled] .btn-default.active {
+				border-color: #fff;
+				background-color: #fff;
+			}
+
+			.btn-default .badge {
+				color: #fff;
+				background-color: #222;
+			}
+
+		.btn-primary {
+			border-color: white;
+			border-width:3px;
+			color: #fff;
+			background-color: #CD3235;
+			-webkit-transition: all .35s;
+			-moz-transition: all .35s;
+			transition: all .35s;
+		}
+
+			.btn-primary:hover,
+			.btn-primary:focus,
+			.btn-primary.focus,
+			.btn-primary:active,
+			.btn-primary.active,
+			.open > .dropdown-toggle.btn-primary {
+				border-color: black;
+				color: #fff;
+				background-color: black;
+			}
+
+			.btn-primary:active,
+			.btn-primary.active,
+			.open > .dropdown-toggle.btn-primary {
+				background-image: none;
+			}
+
+			.btn-primary.disabled,
+			.btn-primary[disabled],
+			fieldset[disabled] .btn-primary,
+			.btn-primary.disabled:hover,
+			.btn-primary[disabled]:hover,
+			fieldset[disabled] .btn-primary:hover,
+			.btn-primary.disabled:focus,
+			.btn-primary[disabled]:focus,
+			fieldset[disabled] .btn-primary:focus,
+			.btn-primary.disabled.focus,
+			.btn-primary[disabled].focus,
+			fieldset[disabled] .btn-primary.focus,
+			.btn-primary.disabled:active,
+			.btn-primary[disabled]:active,
+			fieldset[disabled] .btn-primary:active,
+			.btn-primary.disabled.active,
+			.btn-primary[disabled].active,
+			fieldset[disabled] .btn-primary.active {
+				border-color: yellowgreen;
+				background-color: yellowgreen;
+			}
+
+			.btn-primary .badge {
+				color: yellowgreen;
+				background-color: #fff;
+			}
+
+
+		.btn {
+			border-radius: 300px;
+			text-transform: uppercase;
+		}
+
+		.btn-lg {
+			padding: 15px 30px;
+		}
+
+		::-moz-selection {
+			text-shadow: none;
+			color: #fff;
+			background: #222;
+		}
+
+		::selection {
+			text-shadow: none;
+			color: #fff;
+			background: #222;
+		}
+
+		@media(max-width:1024px) and (min-width:768px) {
+			.logo {
+				height: 80px;
+				width: 300px;
+			}
+			.btn-nav{
+				margin-top:20px;
+				margin-left:10px;
+				background-color:#da3832;
+				font-weight:bold;
+				font-size:1.1rem;
+				width:150px;
+				color:white;
+			}
+			.header-text{
+			margin-top:-4%; margin-left:45%;
+		}
+				.header-text{
+				width:375px;
+				margin-top:150px;
+				margin-left:0px;
+				padding:20px;
+				text-align:left;            
+			}
+			.header-text h1{
+				font-size:2.5em;
+			}
+			.header-circle{
+				position:absolute;
+				margin-top:0;
+				margin-left:35%;           
+				width:625px;
+				height:625px;
+				z-index:10;            
+			}
+			.header-circle img{
+				width:100%;
+				margin-top:120px;
+			}
+			.img-body-1{
+				width:100%;
+				height:350px;
+				margin-top:80px;                
+				margin-bottom:30px;
+			}
+			.img-body-2{
+				width:100%;
+				height:350px;
+				margin-top:120px;
+				margin-bottom:30px;
+			}
+		}
+
+		@media(max-width:768px) {
+			.box-mobile{
+				margin-left:2%;
+			}
+			header #bg{
+				height:535px;
+			}
+			.dark-background{
+				height:535px;
+			}
+			.header-text{
+				width:375px;
+				margin:0;
+				padding:20px;
+				text-align:left;            
+			}
+			.header-text h1{
+				font-size:2.5em;
+			}
+			.header-circle{
+				position:absolute;
+				margin-top:125px;
+				margin-left:-120px;           
+				width:625px;
+				height:625px;
+				z-index:10;            
+			}
+			.header-circle img{
+				width:60%;
+				margin-top:120px;
+			}
+			.img-body-1{
+				width:100%;
+				height:225px;
+				margin-top:0px;                
+				margin-bottom:30px;
+			}
+			.img-body-2{
+				width:100%;
+				height:225px;
+				margin-top:0px;
+				margin-bottom:30px;
+			}
+			.intro h1{
+				font-size:2em;
+			}
+			.intro h2{
+				font-size:1.8em;
+			}
+			.intro h3{
+				font-size:1.4em;
+			}
+			.page-footer .contact {
+				padding: 30px 0;
+			}
+			.page-footer .contact h1{
+				font-size:2em;
+			}
+			.page-footer .contact h2{
+				font-size:1.8em;
+			}
+			.page-footer .contact h3{
+				font-size:1.4em;
+			}
+			.logo {
+				height: 60px;
+				width: 175px;
+				background-position: center 0px;
+			}
+			.intro {
+			color: #687578;
+			background-color: #f3f3f3;
+			padding: 0px;
+			text-align: center;
+			z-index:20;            
+			
+		}
+			.heading{
+				font-size:1.5em;
+			}
+			   html,
+		body {
+		   
+		   overflow-x: hidden;
+		}
+		}
+
+		/*FOOTER NEW*/
+		.footer {
+			color: #E1E1E1;
+			background-color: #323232;
+		}
+
+		.pages {
+			list-style: none;
+			padding: 10px;
+		}
+
+			.pages li {
+				padding-top: 10px;
+				color: white;
+			}
+
+		.pages1 {
+			list-style: none;
+			padding: 10px;
+		}
+
+			.pages1 li {
+				font-size: 16px;
+				padding-top: 10px;
+			}
+
+
+
+		.copy {
+			border-top: 1px solid #5b4d4d;
+			padding: 10px;
+			
+		}
+
+		.footer a:hover {
+			text-decoration: none;
+			color: #bf1e2d;
+		}
+
+		.footer a {
+			font-size: 13px;
+			padding: 10px;
+		font-weight:bold;
+			color: white;
+		}
+
+		
+
+		.social-media {
+			margin-left: 0px;
+		}
+		.social-media a{
+			font-size:18px;
+		}
+
+				#footer {
+			margin-left: 20px;
+			padding-bottom:20px;
+		}
+
+		.footer table h3 {
+			color: white;
+			font-size: 13px;
+			margin-top: 6px;
+			margin-bottom:auto;
+		}
+
+		.page table p {
+			margin: 5px 0px 0px 0px;
+			color: white;
+			font-size: 17px;
+		}
+
+		.footer table {
+			margin-top: 10px;
+		}
+		.footer-programs{
+				margin-left:0px;
+				
+			}
+
+		.footer-programs a{
+			font-size:13px;
+		}
+		.address a{
+			font-size:13px;
+		}
+
+		@media(max-width:768px){
+			.address{
+				display:none;
+			}
+		}
+
+
+		@media (max-width:768px) {
+			.social-media {
+				margin: 0px;
+				padding: 0px;
+				color: white;
+			}
+			.footer-programs{
+				margin-left:0px;
+			}
+			.address {
+				margin-left: 40px;
+			}
+
+			#footer {
+				margin-left: 0px;
+			}
+
+			.footer table {
+				margin-top: 10px;
+			}
+		}
+
+		@media(max-width:1200px) {
+			.page {
+				text-align: center;
+			}
+
+			#footer {
+				margin-left: 0px;
+			}
+
+			.social-media {
+				margin: 0px;
+				align-content: center;
+				padding: 0px;
+			}
+
+			.footer table {
+				margin-top: 10px;
+			}
+		}
+
+		.modal-content {
+			background-color: #883434bf;
+			padding: 20px;
+		}
+
+		.modal h2 {
+			font-size: 30px;
+			color: white;
+		}
+
+		.close {
+			color: white;
+			opacity: 1;
+			font-size: 20px;
+		}
+		.alert-success{
+			font-size:18px; 
+			font-weight:bold; 
+			background-color:rgba(227, 231, 231, 0); 
+			color:#c91918;
+			text-align: center;
+			border-color:rgba(227, 231, 231, 0);
+		}
+		.form-control {
+			color: #687578;
+			border-color: #687578;
+			border-radius:25px;
+			background-color: white;
+			border-width: 2px;
+			text-align: left;
+		}
+
+		header .container {
+			position: relative;
+			z-index: 2;
+		}
+		
+		.content-desktop {
+			display: block;
+		}
+
+		.content-mobile {
+			display: none;
+		}
+		
+		@media screen and (max-width: 768px) {
+			.content-desktop {
+				display: none;
+			}
+
+			.content-mobile {
+				display: block;
+			}
+		}
+	   .testimonials-padding {
+		padding: 0px 100px 0px 100px;
+		}
+
+		.testimonial_sec {
+		width: 100%;
+		float: left;
+		padding: 0px 20px 0px 20px;
+		position: relative;
+		border-radius: 8px;
+		margin: 25px 0 40px;
+		}
+
+		.su-column img, .su-column iframe, .su-column object, .su-column embed {
+		max-width: 100%;
+		}
+
+		.testimonial_sec span.coma {
+		position: absolute;
+		left: 50%;
+		top: -35px;
+		margin: 0 0 0px -37px;
+		}
+
+		.carousel {
+		position: relative;
+		}
+
+		.carousel-inner {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		}
+
+		.carousel-indicators {
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		z-index: 15;
+		width: 60%;
+		padding-left: 0;
+		margin-left: -30%;
+		text-align: center;
+		list-style: none;
+		}
+
+		.su-row {
+		clear: both;
+		zoom: 1;
+		margin-bottom: 1.5em;
+		}
+
+		.test_author {
+		display: block;
+		text-align: center;
+		color: #d51f26;
+		font-size: 17px;
+		}
+
+		.testimonial_sec .carousel-indicators {
+		bottom: -20px;
+		}
+
+		.testimonial_sec .carousel-control.left {
+		background: none;
+		z-index: 999;
+		left: 30%;
+		}
+
+		.testimonial_sec .carousel-control {
+		opacity: 1;
+		top: auto;
+		width: 5%;
+		font-size: 28px;
+		color: #b0b0b0;
+		text-shadow: none;
+		}
+
+		.carousel-control.left {
+		background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+		background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+		background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+		background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+		background-repeat: repeat-x;
+		}
+
+		.carousel-control {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+		filter: alpha(opacity=50);
+		opacity: .5;
+		}
+
+		.testimonial_sec .carousel-control.right {
+		background: none;
+		z-index: 999;
+		right: 30%;
+		}
+
+		.testimonial_sec .carousel-control {
+		opacity: 1;
+		top: auto;
+		bottom: -20px;
+		width: 5%;
+		font-size: 28px;
+		color: #b0b0b0;
+		text-shadow: none;
+		}
+
+		.testimonial_sec .carousel-indicators li {
+		border: transaperent;
+		width: 12px;
+		height: 12px;
+		background: black;
+		margin: 0;
+		}
+
+		.testimonial_sec .carousel-indicators .active {
+		background: #d51f26;
+		}
+	</style>
+</head>
+
+
+<body>
+	<!-- Navigation -->
+	<nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="row content-desktop" style="border-bottom:1px solid rgba(255,255,255,0.1);">
+				<div class="col-sm-6">
+					<p style="float:left; padding:5px; margin-bottom:0; color:white; font-size:1.5rem;"><span style="font-weight:bold; font-size:1.7rem;">CLUB NAME</span> Martial Arts Center</p>
+				</div>
+				<div class="col-sm-6">
+					<p style="float:right; padding:5px; margin-bottom:0; color:white; font-size:1.7rem; font-weight:bold;">CALL US TODAY TO GET STARTED <span><a href="tel:9123456780" style="padding:0px; font-size:1.5rem; color:white; font-weight:normal; padding-left:5px;">912-345-6780</a></span> </p>
+				</div>
+			</div>
+			<div class="row content-mobile" style="border-bottom:1px solid rgba(255,255,255,0.1);">
+				<div class="col-sm-6">
+					<p style="float:left; padding:10px; margin-left:0px; margin-bottom:0; color:white; font-size:1.2rem;"><span style="font-weight:bold; font-size:1.5rem;">Club Name</span> Martial Arts Center</p>
+				</div>
+				<div class="col-sm-6">
+					<p style="float:right; padding:5px; margin-bottom:0; color:white; font-weight:bold;"><span><a href="tel:9123456780" style="padding:0px; color:white; font-weight:normal; font-size:1.5rem; padding-left:5px;">912-345-6780</a></span> </p>
+				</div>
+			</div>
+			<!-- Logo and responsive toggle -->
+			<div class="row">
+			<div class="col-sm-4 navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="home.html">
+
+					<div class=".logo">
+						<h1 style="font-weight:bold; color:white; margin-top:0px; letter-spacing:1px;">LOGO</h1>
+					</div>
+				</a>
+			</div>
+		   
+			<!-- Navbar links -->
+			<div class="col-sm-6 collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="home.html">Home</a>
+					</li>
+					<li >
+						<a href="about.html">About</a>
+					</li>
+					
+					<li>
+						<a href="programs.html">Programs</a>
+					</li>
+					<li>
+						<a href="schedule.html">Schedule</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-sm-2">
+				<a data-toggle="modal" data-target="#trialForm" class="btn btn-default btn-md btn-nav content-desktop">Request Information</a>
+			</div>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<!-- Header -->
+  <header style="margin-top:90px; ">
+	  <div id="bg">
+		  <div class="dark-background ">
+			  <div class="container">
+				  <div class="row">
+					<div class="col-sm-5 header-text lax" data-lax-translate-y="0 0, 1000 350" style="position:absolute; color:white;">      
+						<h1>Reach your full potential with<br /> Club Name!</h1>                                  
+						<p>Get started today with our EXCLUSIVE offer! Request more information today to find out how you or your child can start training!</p>
+					</div>
+					<div class="col-sm-7 header-circle">
+						<img src="https://ultimatefranchise.blob.core.windows.net/images/Images/PlatinumTemplate/bruce-mars-fiEG-Pk6ZyA-unsplash-removebg-preview.png" />
+					</div>
+				  </div>
+			  </div>
+		  </div>
+      </div> 
+</header>
+
+
+	<!-- Intro Section -->
+	<section class="intro">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h2 style="font-weight:bold;">SELECT A PROGRAM</h2>                    
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<div class="container" style="width:915px;" >
+	<div class="col-sm-12 box-mobile" style="margin-top:30px;">
+		
+		<div class="col-sm-4 box">
+			<div class="imgBx">
+				<img src="img/thao-le-hoang-_8Wljh2ygik-unsplash-min (1).jpg">
+			</div>
+			<div class="content">
+				<h2>Image Title</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been the 
+					industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-4 box">
+			<div class="imgBx">
+				<img src="img/jyotirmoy-gupta-ryOMte-FerE-unsplash-min (1).jpg">
+			</div>
+			<div class="content">
+				<h2>Image Title</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been the 
+					industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-4 box">
+			<div class="imgBx">
+				<img src="img/thao-le-hoang-jc9UD4JQFRQ-unsplash-min (1).jpg">
+			</div>
+			<div class="content">
+				<h2>Image Title</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been the 
+					industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-12 box-mobile" style=" margin-bottom:30px;">
+		
+		<div class="col-sm-4 box">
+			<div class="imgBx">
+				<img src="img/chris-chow-TxxSLvOvfCk-unsplash-min (1).jpg">
+			</div>
+			<div class="content">
+				<h2>Image Title</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been the 
+					industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-4 box">
+			<div class="imgBx">
+				<img src="img/thao-le-hoang-jc9UD4JQFRQ-unsplash-min (1).jpg">
+			</div>
+			<div class="content">
+				<h2>Image Title</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been the 
+					industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-4 box">
+			<div class="imgBx">
+				<img src="img/solal-ohayon-5QIPyaDT1V0-unsplash-min (1).jpg">
+			</div>
+			<div class="content">
+				<h2>Image Title</h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been the 
+					industry's standard dummy text ever since the 1500s,
+				</p>
+			</div>
+		</div>
+	</div> 
+</div>
+
+	
+   
+	<section class="intro content-desktop" >
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5" id="element1" style="text-align:left; padding:20px;">
+					<h1 style="font-weight:bold;">DISCIPLINE & CONFIDENCE!</h1>
+					<h2>BUILD CHARACTER AND LEADERSHIP QUALITIES</h2>
+					<p>Martial arts classes benefit growing children far beyond the academy and in many real-world scenarios. Our structured classes
+						are meant to help develop coordination, physical fitness, mental strength, as well as gain valuable social skills. Through positive
+						reinforcement, we can bring out the best in your children to help them succeed in life.</p>
+					<a href="programs.html" class="btn btn-default btn-lg content-desktop" style="margin-top:20px; margin-bottom:20px; background-color:#da3832; font-weight:bold; width:300px; color:white;">View Program</a>
+					<center><a href="programs.html" class="btn btn-default btn-lg content-mobile" style="margin-top:20px; margin-bottom:20px; background-color:#da3832; font-weight:bold; width:300px; color:white;">View Program</a></center>
+				</div>
+				<div class="col-sm-7">
+					<img class="img-body-1" src="https://ultimatefranchise.blob.core.windows.net/images/Images/PlatinumTemplate/thao-le-hoang-yYSY93clr4w-unsplash-min.jpg" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="intro content-mobile" >
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5" id="element5" style="text-align:left; padding:20px;">
+					<h1 style="font-weight:bold;">DISCIPLINE & CONFIDENCE!</h1>
+					<h2>BUILD CHARACTER AND LEADERSHIP QUALITIES</h2>
+					<p>Martial arts classes benefit growing children far beyond the academy and in many real-world scenarios. Our structured classes
+						are meant to help develop coordination, physical fitness, mental strength, as well as gain valuable social skills. Through positive
+						reinforcement, we can bring out the best in your children to help them succeed in life.</p>
+					<a href="programs.html" class="btn btn-default btn-lg content-desktop" style="margin-top:20px; margin-bottom:20px; background-color:#da3832; font-weight:bold; width:300px; color:white;">View Program</a>
+					<center><a href="programs.html" class="btn btn-default btn-lg content-mobile" style="margin-top:20px; margin-bottom:20px; background-color:#da3832; font-weight:bold; width:300px; color:white;">View Program</a></center>
+				</div>
+				<div class="col-sm-7">
+					<img class="img-body-1" src="https://ultimatefranchise.blob.core.windows.net/images/Images/PlatinumTemplate/thao-le-hoang-yYSY93clr4w-unsplash-min.jpg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div  style="  background-color:black;">
+<div class="container" id="element4">
+<div class="row">
+<div class="col-lg-12 col-sm-12 col-xs-12">
+<h1 style="text-align: center; color:white; font-weight:bold;"> <strong>TESTIMONIALS</strong></h1>
+<div class="testimonial_sec">
+<span class="coma">
+<img src="" alt=""></span>
+<div id="testimonial" class="carousel slide" data-ride="carousel">
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox" style="margin-top:-30px;">
+<div class="item active">
+
+
+<div class="su-row">
+<div class="su-column su-column-size-1-2">
+<div class="su-column-inner su-clearfix"></div>
+</div>
+<div class="su-column su-column-size-1-2">
+<div class="su-column-inner su-clearfix"></div>
+</div>
+</div>
+<center> <img src="img/red_profile_icon.png" style="width:125px; height:125px;padding:20px; background-position:center; border: 4px solid #FFF; border-radius:50%;"/> </center>
+<div class="test_author"><h3 style="color:white; font-weight:bold;">Michael Fitzpatrick</h3> 
+<br />
+</div>
+<p style="color:white;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+</p>
+</div>
+<!--01-->
+
+
+
+<!--01-->
+<div class="item ">
+    <center> <img src="img/red_profile_icon.png" style="width:125px; height:125px;padding:20px; background-position:center; border: 4px solid #FFF; border-radius:50%;"/> </center>
+    <div class="test_author"><h3 style="color:white; font-weight:bold;">Gillian</h3> <br />
+</div>
+<p style="color:white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,  
+</p>
+</div>
+
+
+<!--01-->
+<div class="item ">
+    <center> <img src="img/red_profile_icon.png" style="width:125px; height:125px;padding:20px; background-position:center; border: 4px solid #FFF; border-radius:50%;"/> </center>
+    <div class="test_author"><h3 style="color:white; font-weight:bold;">Darnell</h3> <br />
+</div>
+<p style="color:white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+</p>
+</div>
+
+
+</div>
+<!-- Indicators -->
+<div class="slider_bullet" style="padding:20px;">
+<ol class="carousel-indicators">
+<li data-target="#testimonial" data-slide-to="0" class="active"></li>
+<li data-target="#testimonial" data-slide-to="1" class=""></li>
+<li data-target="#testimonial" data-slide-to="2" class=""></li>
+
+
+</ol>
+<a class="left carousel-control" href="#testimonial" role="button" data-slide="prev"><i class="fa fa-chevron-left" style="color:white;"></i></a>
+<a class="right carousel-control" href="#testimonial" role="button" data-slide="next"><i class="fa fa-chevron-right" style="color:white;"></i></a>
+</div>
+<!-- Controls -->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+		<section class="intro content-desktop">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<img class="img-body-2"  src="https://ultimatefranchise.blob.core.windows.net/images/Images/PlatinumTemplate/samuel-castro-0-L3vTLT7E4-unsplash-min.jpg" />
+				</div>
+				<div class="col-sm-5" id="element2" style="text-align:left; padding:20px;">
+					<h1 style="font-weight:bold;">IMPROVE FLEXIBILITY, BALANCE, AND STRENGTH</h1>
+					<h2>GET FIT WHILE LEARNING MARTIAL ARTS</h2>
+					<p>Learn self-defense, build confidence, and get in the best shape of your lives! Martial arts has tons of physical,
+						mental and social benefits, suitable for anyone and everyone. Become part of something positive and learn new skills
+						from trained martial arts professionals. It’s easy to get started—Enroll in martial arts classes today!</p>
+					<a href="programs.html" class="btn btn-default btn-lg content-desktop" style="margin-top:20px; margin-bottom:20px; background-color:#da3832; font-weight:bold; width:300px; color:white;">View Programs</a>
+				</div>                
+			</div>
+		</div>
+	</section>
+	<section class="intro content-mobile">
+		<div class="container">
+			<div class="row">                
+				<div class="col-sm-5" id="element6" style="text-align:left; padding:20px;">
+					<h1 style="font-weight:bold;">IMPROVE FLEXIBILITY, BALANCE, AND STRENGTH</h1>
+					<h2>GET FIT WHILE LEARNING MARTIAL ARTS</h2>
+					<p>Learn self-defense, build confidence, and get in the best shape of your lives! Martial arts has tons of physical,
+						mental and social benefits, suitable for anyone and everyone. Become part of something positive and learn new skills
+						from trained martial arts professionals. It’s easy to get started—Enroll in martial arts classes today!</p>
+					<center><a href="programs.html" class="btn btn-default btn-lg content-mobile" style="margin-top:20px; margin-bottom:20px; background-color:#da3832; font-weight:bold; width:300px; color:white;">View Programs</a></center>
+				</div>  
+				<div class="col-sm-7">
+					<img class="img-body-2"  src="https://ultimatefranchise.blob.core.windows.net/images/Images/PlatinumTemplate/samuel-castro-0-L3vTLT7E4-unsplash-min.jpg" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="page-footer">
+
+		<!-- Contact Us -->
+		<div class="contact">
+			
+			  <div class="container" id="element3">
+				  <h1 style="font-weight:bold;">REQUEST INFORMATION</h1>
+			<h3>               
+			   ACCESS OUR SCHEDULE & SPECIAL WEB OFFER!</h3>
+			<p class="lead" style="font-size:1.6rem;">Get started today with our EXCLUSIVE offer!<br />
+Request more information today to find out how you or your child can start training!</p>
+			<a data-toggle="modal" data-target="#trialForm" class="btn btn-primary btn-lg" style="background-color:black;">GET STARTED TODAY</a>
+			</div>
+			</div> 
+		</div>
+
+		<!-- Copyright etc -->
+
+
+
+	</footer>
+	 <div class="footer container-fluid no-padding" style="background-color:black;">
+		<div class="container>
+			<div class="col-lg-12" id="footer">
+				<center>
+					<div class="col-sm-3"></div>
+<div class="col-sm-2 page">
+<center>
+<table>
+<tr>
+<td><p style="padding:0px;"><a href="home.html">HOME</a></p></td>
+</tr>
+<tr>
+<td><p style="padding:0px;"><a href="about.html">ABOUT</a></p></td>
+</tr>
+<tr>
+<td><p style="padding:0px;"><a href="programs.html">PROGRAMS</a></p></td>
+</tr>
+<tr>
+<td><p style="padding:0px;"><a href="contact.html">CONTACT</a></p></td>
+</tr>
+</table>
+</center>
+
+
+</div>
+<div class="col-sm-2 page footer-programs">
+<center>
+<table>
+<tr>
+<td><p style="padding:0px;"><a href="programs.aspx">PROGRAM 1</a></p></td>
+</tr>
+<tr>
+<td><p style="padding:0px;"><a href="programs.aspx">PROGRAM 2</a></p></td>
+</tr>
+<tr>
+<td><p style="padding:0px;"><a href="programs.aspx">PROGRAM 3</a></p></td>
+</tr>
+
+</table>
+</center>
+</div>
+	<div class="col-sm-2 address">
+<center>
+<table >
+<tr class="address2">
+<td>
+<h3 style="color:white">Club Name</h3></td>
+</tr>
+<tr class="address2">
+<td>
+<h3>Address Line 1</h3>
+</td>
+</tr>
+<tr>
+<td>
+<h3>Address Line 2</h3>
+</td>
+</tr>
+<tr>
+<td>
+<h3><a href="tel:9123456780" style="padding:0px; color:white">912-345-6780</a></h3>
+</td>
+</tr>
+<tr>
+<td>
+<h3><a href="mailto:info@email.com" style="padding:0px; color:white">info@email.com</a></h3>
+</td>
+</tr>
+</table>
+
+</center>
+</div>
+</center>
+
+
+			<div class="col-sm-12 copy" style="font-size:10px;">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-2" >
+					<center>
+<span>&#169;  Platinum Template - 2020. All Rights Reserved</span>
+</center>
+				</div>
+				<div class="col-sm-2 " style="font-size:10px;">
+					<center>
+<a href="" style="font-size:10px;">
+Privacy Policy 
+</a>
+</center>
+				</div>
+				<div class="col-sm-2 " style="font-size:10px;">
+					<center>
+<a href="#" style="font-size:10px;">Designed By Prabhjot Singh</a>
+</center>
+				</div>
+            </div>
+            </div>
+		</div>
+	</div>
+  
+	<!-- Custom Javascript -->
+	<script>
+		// Offset for Site Navigation
+		$('#siteNav').affix({
+			offset: {
+				top: 100
+			}
+		})
+	</script>
+	 <!-- slider function -->
+	<script>
+		$(document).ready(function(){
+			$("#theTarget").skippr();
+		});
+	</script>
+
+	<!-- slider setting -->
+	<script>
+	$("#theTarget").skippr({
+		// transition type (fade, slide)
+		transition: 'fade',
+		// transition speed between slides in milliseconds (any int)
+		speed: 1000,
+		easing: 'easeOutQuart',
+		// navigation bullet shape (bubble, block)
+		navType: 'bubble',
+		// choose the children element type of the target element. (div, img)
+		childrenElementType: 'div',
+		// display arrow or not (true, false)
+		arrows: true,
+		// autoplay or not (true, false)
+		autoPlay: true,
+		// display each slide when autoplay is running in milliseconds (any int)
+		autoPlayDuration: 12000,
+		keyboardOnAlways: true,
+		hidePrevious: false
+	});
+	</script>
+</body>
+
+</html>
+
+

@@ -258,25 +258,16 @@ li{
     flex: 1;
 }
 
-.social-media{
-    margin-top: 5rem;
-}
-
-.social-media i{
-    font-size: 5rem;
-    transition: color 650ms;
-}
-
-.fa-facebook-square:hover{
-    color: #4267b2;
-}
-
-.fa-twitter-square:hover{
+.about-link{ 
     color: #38a1f3;
 }
 
-.fa-dribbble-square:hover{
-    color: #ea4c89;
+.fa-github:hover{
+    color: #6e5494;
+}
+
+.fa-linkedin:hover{
+    color: #2867B2;
 }
 /*End about*/
 
@@ -301,6 +292,11 @@ li{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
+}
+
+.skill li{
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .icon-container{
